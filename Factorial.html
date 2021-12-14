@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>factorial</title>
+</head>
+<body>
+    <div>
+        <script>
+          let num=5,fact=1,i,c=0,factorial
+          for(i=num;i>=1;i--)
+          {
+            fact=fact*i
+            }
+          factorial=fact
+          //console.log(fact)
+          while(fact)
+            {
+                fact=fact%10
+                if(fact==0)
+                  {
+                    c++
+                  }
+                fact=parseInt(fact/10)
+  
+              }
+          console.log(factorial,c)
+            
+            document.write(`<pre> Factorial=${factorial} Number of zeros= ${c}</pre>`);
+          </script>
+    </div>
+</body>
+</html>
