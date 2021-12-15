@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vowels</title>
+</head>
+<body>
+     <div>
+         <h3> Poornima</h3>
+        <h4 id='output'></h4>
+
+        <script>
+            function vowel_count(str1) {
+                var vowel_list = 'aAeEiIoOuU';
+                var vcount = 0;
+
+                for (var x = 0; x < str1.length; x++) {
+                    if (vowel_list.indexOf(str1[x]) !== -1) {
+                        vcount += 1;
+                    }
+
+                }
+                return vcount;
+            }
+        
+        
+        </script>
+    <a href="https://github.com/Poornima-Sivakumar/MiniHackathon.git"><button  type ="button" 
+        onclick='document.getElementById("output").innerHTML = vowel_count("<h1>Poornima</h1>")'>
+        Count Vowels
+    </button></a>
+    </div>
+    
+</script>
+</body>
+
+</html>
