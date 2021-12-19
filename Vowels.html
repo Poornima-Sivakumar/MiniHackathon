@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>vowels</title>
+</head>
+<body>
+    <h2>Poornima</h2>
+    <button>Find vowel</button>
+    <button>Go to github</button>
+    <div id="vowels"></div>
+
+
+    <script>
+        button=document.querySelector("button")
+        name=document.querySelector("h2")
+        vowels=document.getElementById("vowels")
+
+        button.addEventListener("click",()=>{
+            v='aeiouAEIOU',message=""
+            for(t of name){
+                if(v.indexOf(t)!=-1){
+                    message=message+t+""
+                }
+            }
+            vowels.innerText=message
+        })
+    </script>
+    
+</body>
+</html>
